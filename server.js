@@ -5,6 +5,7 @@ var io = require('socket.io')(http);
 var usernames=[];//this array will contain all usernames + colors
 
 app.get('/', function(req, res) {
+   res.header('Access-Control-Allow-Origin', '*');
    res.sendFile('C:/wamp64/www/chat/index2.html');
    app.use(express.static("public"));
 });

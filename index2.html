@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Hello world</title>
+      <script src = "/socket.io/socket.io.js"></script>
+      <script src=" client.js"></script>
+      <link rel="stylesheet" type="text/css" href="index.css">
+   </head>
+
+   <body>  
+	<div class="bgbgbg">
+		<div class="placeholder"></div>  
+		<div class="outer-box" id="outbox">
+				<p class="chatroom_welcome">Welcome to the chat room</p>
+				<div class="chat-field" id="chat_history"></div>
+				<div class="others">
+					<button class="chat-send" id="send" type="button">Send</button>
+					<textarea class="chat-input" id="chatbox" ></textarea>
+					<div class="colorOptions">
+						<span id="colorText">Text Color</span><br>
+						<select id="textColor">
+							<option value="red">Red</option>
+							<option value="black">Black</option>
+							<option value="blue">Blue</option>
+							<option value="green">Green</option>
+							<option value="orange">Orange</option>
+							<option value="purple">Purple</option>
+							<option value="pink">Pink</option>
+							<option value="rgb">RGB</option>
+							<option value="name">Name</option>
+						</select>
+					</div>
+				</div>
+		</div>
+		<button class="hide" id="hide_button"></button>
+		<textarea id="password"></textarea>
+	</div>
+  	</body>
+</html>
